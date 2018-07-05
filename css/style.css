@@ -1,0 +1,110 @@
+html{
+    min-height:100%;
+    position:relative;
+    background-color: rgba(240, 240, 240, 1);
+}
+body{
+    height:100%;
+}
+
+nav{
+    width:100%;
+    top:0;
+    position:fixed !important;
+    border-radius:0px !important;
+    z-index: 1000;
+}
+.navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+    color:white !important;
+}
+.left-menu{
+    position:fixed !important;
+    top:50px;
+    left:0px;
+    height:100%;
+}
+.right-menu{
+    position:fixed !important;
+    top:50px;
+    right:0px;
+    height:100%;
+}
+#content{
+    margin-top:70px;
+}
+
+a, h1, h2, h3, label{
+    color:rgba(0, 161, 135, 1) !important;
+}
+
+a:hover{
+    text-decoration: none !important;
+    color:rgba(2, 110, 92, 1) ;
+    cursor: pointer !important;
+}
+
+a:focus, a:active{
+    outline:none;
+    text-decoration: none;
+}
+
+li{
+    border-radius: 2px;
+    list-style: none;
+    padding: 5px 0px 5px 50px;
+    margin-top: 5px;
+}
+
+li a{
+    color:black !important;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color:rgba(0,0,0,0.1);
+    transition: all 0.2s;
+    -moz-transition: all 0.2s ;
+    -o-transition: all 0.2s ;
+}
+
+.active{
+    background-color:rgba(0,0,0,0.2);
+    transition: all 0.2s;
+    -moz-transition: all 0.2s ;
+    -o-transition: all 0.2s ;
+}
+
+[contenteditable=true]:empty:before{
+    content: attr(content);
+    color: rgba(0,0,0,0.2);
+    display: block;
+}
+
+[contenteditable=true]:focus,[contenteditable=true]:active{
+    outline:none
+}
+
+[contenteditable=true]{
+    font-size: 1.7em;
+    cursor: text;
+}
+
+#submitPost{
+    border:0px;
+    background-color:rgba(0, 184, 174, 0.9);
+    border-radius:2px;
+    padding:5px;
+    color:white;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s ;
+    -o-transition: all 0.2s ;
+}
+
+#submitPost:hover{
+    background-color:rgba(0, 184, 174, 1);
+}
